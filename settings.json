@@ -1,0 +1,116 @@
+{
+  "editor.rulers": [
+    120
+  ],
+  "[python]": {
+    "editor.formatOnType": true,
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "remote.SSH.remotePlatform": {
+    "ubuntu_home": "linux"
+  },
+  "editor.lineNumbers": "relative",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+  "editor.stickyScroll.enabled": true,
+  // VIM
+  "vim.hlsearch": true,
+  "vim.highlightedyank.enable": true,
+  "vim.normalModeKeyBindings": [
+    {
+      "before": [
+        "g",
+        "r"
+      ],
+      "commands": [
+        "editor.action.goToReferences"
+      ],
+    },
+    // Keybindings to navigate with ctrl-hjkl
+    {
+      "before": [
+        "<C-h>"
+      ],
+      "commands": [
+        "workbench.action.navigateLeft"
+      ]
+    },
+    {
+      "before": [
+        "<C-j>"
+      ],
+      "commands": [
+        "workbench.action.navigateDown"
+      ]
+    },
+    {
+      "before": [
+        "<C-k>"
+      ],
+      "commands": [
+        "workbench.action.navigateUp"
+      ]
+    },
+    {
+      "before": [
+        "<C-l>"
+      ],
+      "commands": [
+        "workbench.action.navigateRight"
+      ]
+    },
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": [
+        ">"
+      ],
+      "commands": [
+        "editor.action.indentLines"
+      ]
+    },
+    {
+      "before": [
+        "<"
+      ],
+      "commands": [
+        "editor.action.outdentLines"
+      ]
+    },
+  ],
+  // Paste the last thing that was explicitly yanked.
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<leader>",
+        "p"
+      ],
+      "after": [
+        "\"",
+        "0",
+        "p"
+      ],
+    }
+  ],
+  // For comment wrapping with `gq`.
+  "vim.textwidth": 120,
+  "vim.leader": "<space>",
+  // To improve performance:
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
+  "python.testing.pytestEnabled": true,
+  "editor.cursorSurroundingLines": 10,
+  "vim.insertModeKeyBindings": [],
+  "vim.visualstar": true,
+  "vim.useSystemClipboard": true,
+}
