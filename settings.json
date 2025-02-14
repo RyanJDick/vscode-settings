@@ -4,7 +4,12 @@
   ],
   "[python]": {
     "editor.formatOnType": true,
-    "editor.defaultFormatter": "charliermarsh.ruff"
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "explicit",
+        "source.organizeImports": "explicit"
+    },
   },
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
@@ -78,7 +83,7 @@
     {
       "before": ["g", "p"],
       "commands": ["editor.action.marker.prev"]
-    }
+    },
   ],
   "vim.visualModeKeyBindings": [
     {
@@ -121,7 +126,14 @@
   },
   "python.testing.pytestEnabled": true,
   "editor.cursorSurroundingLines": 10,
-  "vim.insertModeKeyBindings": [],
   "vim.visualstar": true,
   "vim.useSystemClipboard": true,
+  "gitlens.launchpad.indicator.enabled": false,
+  "github.copilot.editor.enableAutoCompletions": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 }
