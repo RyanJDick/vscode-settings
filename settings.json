@@ -33,10 +33,10 @@
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[markdown]": {
     "editor.formatOnSave": false
@@ -105,7 +105,7 @@
       "commands": [
         "editor.action.marker.prev"
       ]
-    },
+    }
   ],
   "vim.visualModeKeyBindings": [
     {
@@ -125,18 +125,18 @@
       ]
     },
   ],
-  // Paste the last thing that was explicitly yanked.
-  "vim.normalModeKeyBindingsNonRecursive": [
+  "vim.visualModeKeyBindingsNonRecursive": [
+    // When pasting over selection, do not overwrite the clipboard with the selection.
     {
       "before": [
-        "<leader>",
         "p"
       ],
       "after": [
         "\"",
-        "0",
-        "p"
-      ],
+        "_",
+        "d",
+        "P"
+      ]
     }
   ],
   // For comment wrapping with `gq`.
